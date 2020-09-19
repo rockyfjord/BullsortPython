@@ -9,6 +9,7 @@ from barcode.writer import ImageWriter
 
 
 def main():
+    print("Hello, Dr. Han!!!!!!!")
     img = Image.open('Images/ocrtest.jpg').convert('L')
     ret, img = cv.threshold(np.array(img), 125, 255, cv.THRESH_BINARY)
     img = Image.fromarray(img.astype(np.uint8))
